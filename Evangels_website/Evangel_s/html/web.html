@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<htmlm lang ="en">
+<html lang ="en">
 <head>
   <link href="../css/webstyle.css" rel="stylesheet">
   <meta charset="UTF-8">
@@ -7,38 +7,77 @@
 </head>
 
 <body>
-  
+ 
 <header>
       <div class="container">
         <div id="branding">
-           <img src="../img/logo.jpeg" width ="150" height="150">
         </div>
         <nav>
           <ul>
            
             <li class="current"><a href="web.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
+            <li><a href="menu2.html">Menu</a></li>
             <li><a href="Contact.html">Contact</a></li>
-            
+           
           </ul>
         </nav>
       </div>
     </header>
-  
-  <div class="slide">
-  <div class="left-arrow"></div>
-  <div class="right-arrow"></div>
-  <ul>
-    <li>
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-    </li>
-  </ul>
+ 
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="../img/10.jpg" style="width:100%">
 </div>
-</section>
+
+<div class="mySlides fade">
+  <img src="../img/8.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="../img/1.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
 
 <footer>
 <p> Evangel's Copyright &copy; 2019</p>

@@ -105,7 +105,7 @@ header{
 color: white;
 padding-top: 5px;
 min-height: 70px;
-border-bottom: #e8491d 3px solid;
+border-bottom: #59ab6b 3px solid;
 }
 
 header a{
@@ -134,7 +134,7 @@ margin-top: 65px;
 }
 
 header .current a{
-color: #e8491d;
+color: #59ab6b;
 font-weight: bold;
 }
 #Menu{
@@ -155,7 +155,7 @@ text-align: center;
 }
 
 footer {
-border-top: #e8491d 3px solid;
+border-top: #59ab6b 3px solid;
 }
 
 

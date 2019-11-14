@@ -17,7 +17,7 @@
             <li><a href="web.html">Home</a></li>
             <li class="current"><a href="menu2.html">Menu</a>
             <li><a href="updatedcontact.html">Contact</a></li>
-            
+           
           </ul>
         </nav>
       </div>
@@ -26,29 +26,211 @@
     <section id="Menu">
       <div class="container">
         <h1>Menu </h1>
-        <p>Here in Evangel's, we try to cater to the needs of our costumers, be it supplies and food. We serve "lutong bahay" foods, street foods, mami and many more at an affordable price.  </p>
-
-        <div class="picture frame"><img class="one"src="../img/2.jpg"></div>
-	<div class="picture frame"><img class="one"src="../img/3.jpg"></div>
-	<div class="picture frame"><img class="one"src="../img/4.jpg"></div>
-	<div class="picture frame"><img class="one"src="../img/6.jpg"></div>
-	<div class="picture frame"><img class="one"src="../img/1.jpg"></div>
-	<div class="picture frame"><img class="one"src="../img/13.jpg"></div>
-	<div class="picture frame"><img class="one"src="../img/14.jpg"></div>
-	<div class="picture frame"><img class="one"src="../img/21.jpg"></div>
-	<div class="picture frame"><img class="one"src="../img/22.jpg"></div>
-	<div class="picture frame"><img class="one"src="../img/18.jpg"></div>
-	<div class="picture frame"><img class="one"src="../img/25.jpg"></div>
-	<div class="picture frame"><img class="one"src="../img/26.jpg"></div>
-	<div class="picture frame"><img class="one"src="../img/24.jpg"></div>
-	<div class="picture frame"><img class="one"src="../img/20.jpg"></div>
-	<div class="picture frame"><img class="one"src="../img/5.jpg"></div>
-	<div class="picture frame"><img class="one"src="../img/7.jpg"></div>
-	<div class="picture frame"><img class="one"src="../img/11.jpg"></div>
-	<div class="picture frame"><img class="one"src="../img/9.jpg"></div>
-	<div class="picture frame"><img class="one"src="../img/16.jpg"></div>
-	<div class="picture frame"><img class="one"src="../img/19.jpg"></div>
+          <p>Here in Evangel's, we try to cater to the needs of our costumers, be it supplies and food. We serve "lutong bahay" foods, street foods, mami and many more at an affordable price.  </p>
+	      
+      <div class="column">
+        <img src="../img/2.jpg" style="width:100%;max-width: 300px" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+        <img src="../img/3.jpg"style="width:100%;max-width: 300px" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+        <img src="../img/4.jpg"style="width:100%;max-width: 300px" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
       </div>
+      <div class="column">
+        <img src="../img/6.jpg"style="width:100%;max-width: 300px" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+        <img src="../img/1.jpg" style="width:100%;max-width: 300px" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+        <img src="../img/13.jpg" style="width:100%;max-width: 300px" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="../img/21.jpg" style="width:100%;max-width: 300px" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+        <img src="../img/25.jpg" style="width:100%;max-width: 300px" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+        <img src="../img/22.jpg" style="width:100%;max-width: 300px" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="../img/18.jpg" style="width:100%;max-width: 300px" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+        <img src="../img/11.jpg" style="width:100%;max-width: 300px" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+        <img src="../img/5.jpg" style="width:100%;max-width: 300px" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="../img/24.jpg" style="width:100%;max-width: 300px" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+        <img src="../img/19.jpg" style="width:100%;max-width: 300px" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+        <img src="../img/7.jpg" style="width:100%;max-width: 300px" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="../img/26.jpg" style="width:100%;max-width: 300px" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
+        <img src="../img/14.jpg" style="width:100%;max-width: 300px" onclick="openModal();currentSlide(17)" class="hover-shadow cursor">
+        <img src="../img/9.jpg" style="width:100%;max-width: 300px" onclick="openModal();currentSlide(18)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="../img/16.jpg" style="width:100%;max-width: 300px" onclick="openModal();currentSlide(19)" class="hover-shadow cursor">
+        <img src="../img/20.jpg" style="width:100%;max-width: 300px" onclick="openModal();currentSlide(20)" class="hover-shadow cursor">
+      </div>
+
+
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+          <div class="slideshow-container">
+          <div class="mySlides">
+            <div class="numbertext">1 / 20</div>
+            <img src="../img/2.jpg" style="width:100%">
+    </div>
+  </div>
+        <div class="slideshow-container">
+        <div class="mySlides">
+            <div class="numbertext">2 / 20</div>
+            <img src="../img/3.jpg" style="width:100%">
+    </div>
+  </div>
+  <div class="slideshow-container">
+        <div class="mySlides">
+            <div class="numbertext">3 / 20</div>
+            <img src="../img/4.jpg" style="width:100%">
+    </div>
+  </div>
+  <div class="slideshow-container">
+        <div class="mySlides">
+            <div class="numbertext">4 / 20</div>
+            <img src="../img/6.jpg" style="width:100%">
+    </div>
+  </div>
+  <div class="slideshow-container">
+        <div class="mySlides">
+            <div class="numbertext">5 / 20</div>
+            <img src="../img/1.jpg" style="width:100%">
+    </div>
+  </div>
+  <div class="slideshow-container">
+        <div class="mySlides">
+            <div class="numbertext">6 / 20</div>
+            <img src="../img/13.jpg" style="width:100%">
+    </div>
+  </div>
+  <div class="slideshow-container">
+        <div class="mySlides">
+            <div class="numbertext">7 / 20</div>
+            <img src="../img/21.jpg" style="width:100%">
+    </div>
+  </div>
+  <div class="slideshow-container">
+        <div class="mySlides">
+            <div class="numbertext">8 / 20</div>
+            <img src="../img/25.jpg" style="width:100%">
+    </div>
+  </div>
+  <div class="slideshow-container">
+        <div class="mySlides">
+            <div class="numbertext">9 / 20</div>
+            <img src="../img/22.jpg" style="width:100%">
+    </div>
+  </div>
+  <div class="slideshow-container">
+        <div class="mySlides">
+            <div class="numbertext">10 / 20</div>
+            <img src="../img/18.jpg" style="width:100%">
+    </div>
+  </div>
+  <div class="slideshow-container">
+        <div class="mySlides">
+            <div class="numbertext">11 / 20</div>
+            <img src="../img/11.jpg" style="width:100%">
+    </div>
+  </div>
+  <div class="slideshow-container">
+        <div class="mySlides">
+            <div class="numbertext">12 / 20</div>
+            <img src="../img/5.jpg" style="width:100%">
+    </div>
+  </div>
+  <div class="slideshow-container">
+        <div class="mySlides">
+            <div class="numbertext">13 / 20</div>
+            <img src="../img/24.jpg" style="width:100%">
+    </div>
+  </div>
+  <div class="slideshow-container">
+        <div class="mySlides">
+            <div class="numbertext">14 / 20</div>
+            <img src="../img/19.jpg" style="width:100%">
+    </div>
+  </div>
+  <div class="slideshow-container">
+        <div class="mySlides">
+            <div class="numbertext">15 / 20</div>
+            <img src="../img/7.jpg" style="width:100%">
+    </div>
+  </div>
+  <div class="slideshow-container">
+        <div class="mySlides">
+            <div class="numbertext">16 / 20</div>
+            <img src="../img/26.jpg" style="width:100%">
+    </div>
+  </div>
+  <div class="slideshow-container">
+        <div class="mySlides">
+            <div class="numbertext">17 / 20</div>
+            <img src="../img/14.jpg" style="width:100%">
+    </div>
+  </div>
+  <div class="slideshow-container">
+        <div class="mySlides">
+            <div class="numbertext">18 / 20</div>
+            <img src="../img/9.jpg" style="width:100%">
+    </div>
+  </div>
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <div class="numbertext">19 / 20</div>
+            <img src="../img/16.jpg" style="width:100%">
+    </div>
+  </div>
+  <div class="slideshow-container">
+        <div class="mySlides">
+            <div class="numbertext">20 / 20</div>
+            <img src="../img/20.jpg" style="width:100%">
+    </div>
+  </div>
+
+    <a class="prevM" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="nextM" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+  </div>
+</div>
+</div>
+
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
     </section>
 
     <footer>

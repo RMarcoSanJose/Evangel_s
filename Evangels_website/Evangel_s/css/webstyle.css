@@ -1,12 +1,12 @@
 body{
-	font-family: century gothic;
-	overflow-x: hidden;
-  			 -webkit-background-size: cover;
- 			 -moz-background-size: cover;
-  			 -o-background-size: cover;
- 			 background-size: cover;
- 			 background: url(../img/uc.jpeg);
- 			 color: white;
+font-family: century gothic;
+overflow-x: hidden;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: url(../img/uc.jpeg);
+  color: white;
 }
 
 .container{
@@ -37,10 +37,31 @@ max-width: 1000px;
 
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
 }
 
 .prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.prevM, .nextM {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.nextM {
+  right: 21%;
+}
+
+.prevM:hover, .nextM:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
@@ -171,24 +192,95 @@ p{
 text-align: center;
 }
 
-		.p {
-			color: white;
-			text-align: center;
-			font-size: 20px;
-		}
-		.frame{
-			float:left;
-			margin: 20px;
-			height: 300px;
-			width: 300px;
-			overflow: hidden;
-			border: 3px solid yellowgreen;
-			-webkit-box-shadow: 3px 3px 3px #111;
-			box-shadow: 3px 3px 3px #111;
-		}
-		.picture img{
-			height: 500px;
-			width: 500px;
-			-webkit-transform: all ls ease;
-			transform: all ls ease;
-		}
+.p {
+color: white;
+text-align: center;
+font-size: 20px;
+}
+.frame{
+float:left;
+margin: 20px;
+height: 300px;
+width: 300px;
+overflow: hidden;
+border: 3px solid yellowgreen;
+-webkit-box-shadow: 3px 3px 3px #111;
+box-shadow: 3px 3px 3px #111;
+}
+.picture img{
+height: 500px;
+width: 500px;
+-webkit-transform: all ls ease;
+transform: all ls ease;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+/* Modal Content */
+.modal-content {
+  display: block;
+  margin: auto;
+  padding: 0;
+  width: 80%;
+  max-width: 800px;
+}
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+.mySlides {
+  display: none;
+}
+.cursor {
+  cursor: pointer
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color:#fff;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 16px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.demo {
+  opacity: 0.6;
+}
+.active,
+.demo:hover {
+  opacity: 1;
+}
+img.hover-shadow {
+  transition: 0.3s
+}
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+</style>

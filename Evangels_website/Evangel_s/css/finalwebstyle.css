@@ -1,0 +1,172 @@
+* {
+box-sizing: border-box;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  line-height: 30px;
+  color: black;
+  background-image: url(uc2.jpg);
+}
+
+header{
+color: white;
+padding-top: 5px;
+min-height: 70px;
+border-bottom: #59ab6b 3px solid;
+}
+
+header a{
+color: white;
+text-transform: uppercase;
+font-size: 18px;
+
+}
+
+header li{
+float: left;
+display: inline;
+padding: 0 20px 0 20px;
+font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+header #branding{
+float: left;
+
+}
+header #branding h1{
+margin: 0;
+}
+
+header nav{
+float: right;
+margin-top: 65px;
+}
+
+header .current a{
+color: #59ab6b;
+font-weight: bold;
+}
+
+h1{
+font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+font-weight: bold;
+padding: 10px 10px 10px 10px;
+text-align: center;
+font-size: 50px;
+color: white;
+text-shadow: 2px 2px black;
+}
+
+footer {
+border-top: #59ab6b 3px solid;
+text-align: center;
+color: white;
+font-size: 15px;
+}
+
+.logo{
+display: inline-block;
+vertical-align: top;
+width: 100px;
+height: 100px;
+}
+
+.container{
+width: 80%;
+margin: auto;
+overflow: hidden;
+}
+/*end of nav*/
+
+.slideshow-container{
+width: 680px;
+height: 840px;
+position: relative;
+margin: auto;
+padding-top: 80px;
+}
+
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 10px;
+margin-top: -100px;
+margin-right: -30px;
+margin-left: -30px;
+font-weight: bold;
+font-size: 15px;
+transition: all;
+border-radius: 50px;
+background-color: white;
+opacity: 0.5;
+color: black;
+}
+
+.next {
+right: 0;
+}
+
+.nextM {
+  right: 21%;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 25%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot {
+  background-color: white;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
